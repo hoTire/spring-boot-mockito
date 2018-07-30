@@ -10,6 +10,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.verify;
 
 /**
  * @author : hotire
@@ -27,6 +28,8 @@ public class TestServiceTest {
     public void getUser() {
         given(testRepository.getUser("abc")).willReturn(new TestUser("abc","hotire"));
         final TestUser result = testService.getUser("abc");
+
+        verify(testRepository).getUser("abc");
         assertEquals("abc",result.getId());
         assertEquals("hotire",result.getName());
     }
