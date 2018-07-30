@@ -9,7 +9,7 @@
 
 여러가지 프레임워크 중 사용법이 간단한 Mockito를 사용해보자. :) 
 
-### Mock Dependency
+### Mockito Dependency
 
 ```
 <!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
