@@ -21,6 +21,36 @@
 </dependency>
 ```
 
+### 구조
+
+```
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── kakao
+│   │   │           └── hotire
+│   │   │               ├── MockitoApplication.java
+│   │   │               ├── model
+│   │   │               │   └── TestUser.java
+│   │   │               ├── repository
+│   │   │               │   └── TestRepository.java
+│   │   │               └── service
+│   │   │                   └── TestService.java
+│   │   └── resources
+│   │       ├── application.properties
+│   │       ├── static
+│   │       └── templates
+│   └── test
+│       └── java
+│           └── com
+│               └── kakao
+│                   └── hotire
+│                       ├── HotireApplicationTests.java
+│                       └── service
+│                           └── TestServiceTest.java
+
+```
 
 </br> hotire blog : https://blog.naver.com/gngh0101
 </br> mockito : https://github.com/mockito/mockito
